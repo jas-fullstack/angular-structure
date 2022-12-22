@@ -13,11 +13,13 @@ export class LoginComponent {
   });
   
   formDataString = "";
+  arry:any = []
 
   constructor(){
     
   }
   onSubmit() {
+    this.arry.push("aaaa")
      console.log(this.loginForm)
     if(this.loginForm.valid){
       console.log(this.loginForm.value);
